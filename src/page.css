@@ -1,0 +1,155 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./components/Chat/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.chat-textarea .rt-TextAreaInput {
+  height: 50px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 6rem;
+}
+.chat-textarea .rt-TextAreaInput img {
+  max-width: 28rem;
+}
+@media not all and (min-width: 768px) {
+  .chat-textarea .rt-TextAreaInput img {
+    max-width: 100%;
+  }
+}
+.chat-textarea .rt-TextAreaInput table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.chart-side-bar {
+  z-index: 10;
+  width: 16rem;
+  overflow: hidden;
+  background-color: var(--color-background);
+  transition: 0.5s;
+}
+
+@media not all and (min-width: 768px) {
+  .chart-side-bar {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 0px;
+    border-style: none;
+  }
+}
+.chart-side-bar .rt-ScrollAreaViewport > div {
+  display: block;
+}
+.chart-side-bar > div {
+  border-right: 1px solid var(--gray-a4);
+}
+.chart-side-bar.show {
+  width: 16rem;
+}
+
+.bg-token-surface-primary {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-duration: 100ms;
+  background-color: var(--accent-a2);
+}
+.bg-token-surface-primary:hover {
+  background-color: var(--accent-a3);
+}
+
+.bg-token-surface {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition-duration: 100ms;
+}
+.bg-token-surface.active {
+  background-color: var(--accent-a4);
+}
+.bg-token-surface:hover {
+  background-color: var(--accent-a3);
+}
+
+.userMessage table {
+  border-collapse: collapse;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+.userMessage table th,
+.userMessage table td {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./components/Spin/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.spin-loading {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.spin-loading .spin-chidren::after {
+  pointer-events: none;
+  opacity: 1;
+}
+.spin-loading .spin-loading-layer-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.spin-chidren::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-a3);
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0, 0, 1, 1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.spin-loading-layer {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.spin-dot-list {
+  position: relative;
+  display: inline-block;
+  height: 0.5rem;
+  width: 3.5rem;
+  transform-style: preserve-3d;
+  perspective: 200px;
+}

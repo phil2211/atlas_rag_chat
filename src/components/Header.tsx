@@ -8,6 +8,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaAdjust, FaGithub, FaMoon, FaRegSun } from 'react-icons/fa'
 import { Link } from './Link'
 import { useTheme } from './Themes'
+import companyLogo from '@/assets/MongoDB_SpringGreen.png';
 
 export interface HeaderProps {
   children?: React.ReactNode
@@ -32,7 +33,7 @@ export const Header = ({ children, gitHubLink, ghost }: HeaderProps) => {
       <Flex align="center" gap="3">
         <RouterLink to="/">
           <Heading as="h2" size="3" style={{ maxWidth: 200 }}>
-            ChatGPT Lite
+            <img src={companyLogo} style={{height:40}}/>
           </Heading>
         </RouterLink>
         <Flex align="center" gap="3" className="ml-auto">

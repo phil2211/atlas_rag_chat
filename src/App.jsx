@@ -10,7 +10,7 @@ const APP_ID = import.meta.env.VITE_REALM_APP_ID;
 
 const RequireLoggedInUser = ({ children }) => {
   const app = useRealmApp();
-  return app.currentUser ? children : <Layout><Login /></Layout>;
+  return app.currentUser ? children : <Router><Layout><Login /></Layout></Router>;
 };
 
 const App = () => {

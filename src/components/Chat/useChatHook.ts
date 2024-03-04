@@ -12,7 +12,7 @@ export const DefaultPersonas: Persona[] = [
   {
     id: 'chatgpt',
     role: 'system',
-    name: 'MongoDB Atlas GPT',
+    name: 'eForesight GPT',
     prompt: 'You are an AI assistant that helps people find information. You use the context provided to find the moste accurate information.',
     isDefault: true
   },

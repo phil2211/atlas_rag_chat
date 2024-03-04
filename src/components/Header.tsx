@@ -8,7 +8,7 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaAdjust, FaGithub, FaMoon, FaRegSun } from 'react-icons/fa'
 import { Link } from './Link'
 import { useTheme } from './Themes'
-import companyLogo from '@/assets/MongoDB_SpringGreen.png';
+import companyLogo from '@/assets/eforesight_logo.png';
 
 export interface HeaderProps {
   children?: React.ReactNode
